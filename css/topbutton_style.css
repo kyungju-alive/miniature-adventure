@@ -1,0 +1,18 @@
+
+/******Scroll Button Code*******/
+
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 45px;
+    background-color: ;
+    text-align: center;
+    line-height: 60px;
+    padding: 10px;
+    color: #fff;
+    z-index: 100;
+    display: none;
+    border-radius: 3%;
+}

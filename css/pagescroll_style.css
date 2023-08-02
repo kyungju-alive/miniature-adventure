@@ -1,0 +1,104 @@
+/* stylesheet for demo and examples */
+
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic,700);
+
+
+header, #navigation-menu, #content, footer{
+	position: relative;
+}
+
+nav ul, nav ol, nav li{
+	list-style: none; 
+	margin: 0; 
+	padding: 0;
+}
+
+#navigation-menu{
+	position: fixed;
+	top: 3em;
+	right: 3em;
+	left: auto;
+	bottom: auto;
+	z-index: 20;
+	text-shadow: none;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#navigation-menu ul{
+	overflow: hidden;
+	background: #564a44;
+	background: rgba(0, 0, 0, 0.235);
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+#navigation-menu li{
+	margin: 4px;
+}
+
+#navigation-menu a{
+	transition: all 0.5s;
+	color: #f4dbbd;
+	text-decoration: none;
+	display: block;
+	padding: 0.2em 0.6em;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+
+#navigation-menu a:hover, #navigation-menu a.mPS2id-highlight{
+	transition: all 0.5s;
+	background: #1c5a4a;
+	color: #e6c8a5;
+}
+
+
+.horizontal-layout #navigation-menu{
+	right: auto;
+	left: 3em;
+	top: 4em;
+}
+
+
+
+@media only screen and (min-width: 3140px){
+	
+	header, .content, footer, 
+	.horizontal-layout header, .horizontal-layout .content, .horizontal-layout footer,
+	.auto-layout .content{
+		padding-right: 3em;
+		padding-left: 3em;
+	}
+	
+	.horizontal-layout header h1{
+		display: block;
+	}
+	
+	.auto-layout header h1{
+		margin-left: 0;
+	}
+	
+	#navigation-menu{
+		font-size: 2em;
+		top: 1.55em;
+	}
+	
+	.horizontal-layout #navigation-menu, .auto-layout #navigation-menu{
+		right: 3em;
+		left: auto;
+		top: 1.55em;
+	}
+	
+	#navigation-menu ul{
+		-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	}
+	
+	#navigation-menu li{
+		float: left;
+		margin: 3px 5px;
+	}
+	
+	#navigation-menu a{
+		-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	}
+	
+}
